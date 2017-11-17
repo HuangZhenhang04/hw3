@@ -30,6 +30,9 @@
             var newLi=document.createElement('li');
             newNode.appendChild(newLi);
             newLi.innerHTML = "第"+arr[i]+"名: "+BSixty[i];
+        /*因为aqiData是二维数组，所以BSixty = aqiData.filter(function (x) {return x[1] > 60;}）即使用X数组的第二个元素判断，其大于60，就返回。 
+同样sort是对数组进行排序，我们是要降序输出，所以var BSixty = BSixty.sort(function (x,y) { return y[1] - x[1];}) */
+
         }
     })();
 </script>
